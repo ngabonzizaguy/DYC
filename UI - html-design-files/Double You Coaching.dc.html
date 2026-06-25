@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; }
+  input::placeholder, textarea::placeholder { color: rgba(248,250,252,0.40); }
+  input, textarea { font-family:'Inter',sans-serif; box-sizing:border-box; }
+  ::selection { background:#D4AF37; color:#111827; }
+  a { -webkit-tap-highlight-color: transparent; }
+</style>
+<script src="image-slot.js"></script>
+</helmet>
+
+<!-- ============ VARIATION A — MIDNIGHT ============ -->
+<div style="position:absolute; left:0; top:0; width:1240px;">
+  <div data-drags-parent="1" style="font:600 13px/1 'Inter',sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#9aa3b2; padding:0 4px 14px;">Variation A &mdash; Midnight &middot; heavy glass &middot; centered hero</div>
+  <div data-screen-label="Variation A — Midnight" style="position:relative; overflow:hidden; border-radius:20px; color:#F8FAFC; font-family:'Inter',sans-serif; background:radial-gradient(1200px 640px at 18% -8%, rgba(212,175,55,0.12), transparent 60%), radial-gradient(950px 560px at 102% 22%, rgba(100,116,139,0.16), transparent 55%), #111827; box-shadow:0 50px 130px rgba(0,0,0,.55);">
+
+    <!-- HEADER A -->
+    <div style="padding:22px 28px 0;">
+      <header style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:15px 24px; border-radius:16px; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); box-shadow:0 8px 30px rgba(0,0,0,.25);">
+        <div style="font:600 15px/1 'Inter',sans-serif; letter-spacing:.14em; color:#F8FAFC;">DOUBLE YOU <span style="color:#D4AF37;">//</span> COACHING</div>
+        <nav style="display:flex; gap:34px;">
+          <a href="#" style="font:400 14px 'Inter',sans-serif; color:#64748B; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Home</a>
+          <a href="#about-a" style="font:400 14px 'Inter',sans-serif; color:#64748B; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">About</a>
+          <a href="#pillars-a" style="font:400 14px 'Inter',sans-serif; color:#64748B; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Pillars</a>
+          <a href="#contact-a" style="font:400 14px 'Inter',sans-serif; color:#64748B; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Contact</a>
+        </nav>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <button style="padding:9px 17px; border-radius:999px; border:1px solid rgba(100,116,139,0.5); background:transparent; color:#F8FAFC; font:500 13px 'Inter',sans-serif; cursor:pointer; transition:all .25s;" style-hover="border-color:#D4AF37; color:#D4AF37;">Client Portal</button>
+          <button style="padding:10px 20px; border-radius:999px; background:#D4AF37; color:#111827; font:600 13px 'Inter',sans-serif; border:none; cursor:pointer; transition:all .25s; box-shadow:0 6px 20px rgba(212,175,55,.28);" style-hover="background:#E3C45A; transform:translateY(-1px);">Book a Call</button>
+        </div>
+      </header>
+    </div>
+
+    <!-- HERO A (centered) -->
+    <section style="padding:92px 40px 64px; display:flex; flex-direction:column; align-items:center; text-align:center;">
+      <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.30em; text-transform:uppercase; color:#D4AF37; margin-bottom:24px;">Life &amp; Leadership Coaching</div>
+      <h1 style="font-family:'EB Garamond',serif; font-weight:500; font-size:98px; line-height:1.0; letter-spacing:-0.02em; margin:0; max-width:1000px; color:#F8FAFC;">Restoring <span style="font-style:italic; color:#D4AF37;">Beauty</span> for Ashes.</h1>
+      <p style="max-width:740px; margin:34px 0 0; padding:24px 32px; border-radius:16px; background:rgba(25,33,50,0.45); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(100,116,139,0.25); font:300 18px/1.62 'Inter',sans-serif; color:#cdd3dd;">A premium, co-creative coaching framework built to challenge obstacles and unlock your ultimate potential across career, relationships, and life purpose.</p>
+      <div style="display:flex; gap:16px; margin-top:38px;">
+        <button style="padding:15px 32px; border-radius:999px; background:#D4AF37; color:#111827; font:600 15px 'Inter',sans-serif; border:none; cursor:pointer; transition:all .25s; box-shadow:0 10px 30px rgba(212,175,55,.3);" style-hover="background:#E3C45A; transform:translateY(-2px);">Get Started</button>
+        <button onClick="{{ openVideo }}" style="padding:15px 28px; border-radius:999px; border:1px solid rgba(100,116,139,0.5); background:transparent; color:#F8FAFC; font:500 15px 'Inter',sans-serif; cursor:pointer; transition:all .25s; display:inline-flex; align-items:center; gap:11px;" style-hover="background:rgba(25,33,50,0.6); border-color:#D4AF37;"><span style="display:inline-flex; width:22px; height:22px; border-radius:999px; border:1px solid #D4AF37; align-items:center; justify-content:center; font-size:9px; color:#D4AF37;">&#9654;</span>Watch Vision Video</button>
+      </div>
+    </section>
+
+    <!-- FEATURE STRIP A (joined glass bar) -->
+    <section style="padding:0 40px;">
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); border-radius:16px; background:rgba(25,33,50,0.5); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(100,116,139,0.25); overflow:hidden;">
+        <div style="padding:26px 28px; border-right:1px solid rgba(100,116,139,0.18);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">High-Ticket Coaching</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#7e8798;">Built for founders, executives &amp; visionaries.</div></div>
+        <div style="padding:26px 28px; border-right:1px solid rgba(100,116,139,0.18);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Co-Creative Method</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#7e8798;">We build the path together &mdash; never prescriptive.</div></div>
+        <div style="padding:26px 28px; border-right:1px solid rgba(100,116,139,0.18);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Faith-Forward</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#7e8798;">Grounded clarity that protects your peace.</div></div>
+        <div style="padding:26px 28px;"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Whole-Life Scope</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#7e8798;">Career, relationships, spirit &amp; wellness.</div></div>
+      </div>
+    </section>
+
+    <!-- ABOUT A (image left / text right) -->
+    <section id="about-a" style="padding:96px 40px; display:grid; grid-template-columns:0.92fr 1.08fr; gap:60px; align-items:center;">
+      <div style="padding:10px; border-radius:24px; background:rgba(25,33,50,0.4); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(100,116,139,0.25);">
+        <image-slot id="dyc-a-portrait" style="width:100%; height:520px; display:block;" shape="rounded" radius="16" placeholder="Drop a portrait of Nana"></image-slot>
+      </div>
+      <div>
+        <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:20px;">About &middot; Nana Bonsra</div>
+        <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:54px; line-height:1.06; letter-spacing:-0.01em; margin:0 0 26px; color:#F8FAFC;">Beauty, in exchange for ashes.</h2>
+        <p style="font:300 17px/1.75 'Inter',sans-serif; color:#aab2c0; margin:0 0 18px; max-width:560px;">Double You Coaching was founded on a single conviction: that every season of ash carries the raw material of something more beautiful than what came before.</p>
+        <p style="font:300 17px/1.75 'Inter',sans-serif; color:#aab2c0; margin:0 0 30px; max-width:560px;">The work is co-creative. We sit with your obstacles &mdash; in career, in relationships, in spirit &mdash; and architect the mindset and momentum to move through them. Premium, honest, and built entirely around where you are going.</p>
+        <div style="font-family:'EB Garamond',serif; font-style:italic; font-size:22px; color:#F8FAFC;">&mdash; Nana Bonsra</div>
+        <a href="#pillars-a" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; display:inline-flex; align-items:center; gap:9px; margin-top:24px; transition:gap .25s;" style-hover="gap:14px;">Explore the framework &rarr;</a>
+      </div>
+    </section>
+
+    <!-- BENTO A (asymmetric, tall feature left) -->
+    <section id="pillars-a" style="padding:0 40px 96px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:32px;">
+        <div>
+          <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:16px;">The Five Pillars</div>
+          <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:46px; line-height:1.05; letter-spacing:-0.01em; margin:0; color:#F8FAFC; max-width:560px;">One framework. Every dimension of your life.</h2>
+        </div>
+        <p style="font:300 15px/1.65 'Inter',sans-serif; color:#7e8798; max-width:340px; margin:0;">A co-creative system that meets you across business, career, family, spirit, and wellness &mdash; without compromise.</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:232px; gap:18px;">
+        <!-- Card 1: Business (large) -->
+        <div style="grid-column:1/4; grid-row:1/3; position:relative; overflow:hidden; border-radius:18px; padding:30px; display:flex; flex-direction:column; justify-content:space-between; gap:22px; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-6px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="position:absolute; top:-50px; right:-50px; width:220px; height:220px; background:radial-gradient(circle, rgba(212,175,55,0.2), transparent 70%); filter:blur(14px); pointer-events:none;"></div>
+          <image-slot id="dyc-a-business" style="width:100%; height:206px; display:block;" shape="rounded" radius="12" placeholder="Drop image"></image-slot>
+          <div>
+            <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">01 &mdash; Business</div>
+            <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:31px; line-height:1.1; margin:0 0 12px; color:#F8FAFC;">Executive Leadership &amp; Business Strategy</h3>
+            <p style="font:300 14.5px/1.6 'Inter',sans-serif; color:#aab2c0; margin:0;">High-ticket positioning and mindset architecture for founders, executives, and visionaries looking to scale.</p>
+            <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:16px;">Explore Business Track &rarr;</a>
+          </div>
+        </div>
+        <!-- Card 2: Career -->
+        <div style="grid-column:4/7; grid-row:1/2; position:relative; overflow:hidden; border-radius:18px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-6px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">02 &mdash; Career</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:25px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Corporate Advancement</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#aab2c0; margin:0;">Breakthrough frameworks designed to help high-performers navigate corporate dynamics and secure executive promotions.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Career Track &rarr;</a>
+        </div>
+        <!-- Card 3: Family -->
+        <div style="grid-column:4/7; grid-row:2/3; position:relative; overflow:hidden; border-radius:18px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-6px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">03 &mdash; Family</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:25px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Family &amp; Relationship Guidance</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#aab2c0; margin:0;">Co-creative alignment frameworks to bring harmony, communication, and emotional strength back to couples and families.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Family Track &rarr;</a>
+        </div>
+        <!-- Card 4: Spiritual -->
+        <div style="grid-column:1/4; grid-row:3/4; position:relative; overflow:hidden; border-radius:18px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-6px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">04 &mdash; Spirituality</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:24px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Spiritual Grounding</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#aab2c0; margin:0;">Faith-forward foundations providing deep inner alignment and core clarity to protect your peace.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Alignment &rarr;</a>
+        </div>
+        <!-- Card 5: Wellness -->
+        <div style="grid-column:4/7; grid-row:3/4; position:relative; overflow:hidden; border-radius:18px; padding:28px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(25,33,50,0.55); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(100,116,139,0.28); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-6px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">05 &mdash; Wellness</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:24px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Holistic Wellness</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#aab2c0; margin:0;">Optimizing emotional, mental, and physical fitness to support sustainable, high-performance daily living.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Wellness &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CONVERSION A -->
+    <section id="contact-a" style="padding:0 40px 70px;">
+      <div style="display:grid; grid-template-columns:1.05fr 0.95fr; border-radius:24px; overflow:hidden; background:rgba(25,33,50,0.55); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); border:1px solid rgba(100,116,139,0.28); box-shadow:0 30px 90px rgba(0,0,0,.4);">
+        <!-- form -->
+        <div style="padding:48px;">
+          <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:18px;">Get in touch today</div>
+          <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:40px; line-height:1.08; margin:0 0 28px; color:#F8FAFC;">Let&rsquo;s begin the conversation.</h2>
+          <div style="display:flex; flex-direction:column; gap:18px;">
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#64748B; margin-bottom:8px;">Name</label><input type="text" placeholder="Your full name" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(25,33,50,0.5); border:1px solid rgba(100,116,139,0.28); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;" /></div>
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#64748B; margin-bottom:8px;">Email</label><input type="email" placeholder="you@example.com" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(25,33,50,0.5); border:1px solid rgba(100,116,139,0.28); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;" /></div>
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#64748B; margin-bottom:8px;">Message</label><textarea rows="3" placeholder="Tell me where you&rsquo;re headed&hellip;" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(25,33,50,0.5); border:1px solid rgba(100,116,139,0.28); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; resize:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;"></textarea></div>
+            <button onClick="{{ submitFormA }}" style="{{ formAStyle }}" style-hover="filter:brightness(1.05);">{{ formALabel }}</button>
+          </div>
+        </div>
+        <!-- scheduling -->
+        <div style="padding:44px; background:rgba(212,175,55,0.05); border-left:1px solid rgba(100,116,139,0.22);">
+          <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:18px;">Book a discovery call</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:27px; line-height:1.1; margin:0 0 6px; color:#F8FAFC;">Open this week</h3>
+          <p style="font:300 13.5px 'Inter',sans-serif; color:#8b94a4; margin:0 0 22px;">{{ selAText }}</p>
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <sc-for list="{{ slotsA }}" as="slot" hint-placeholder-count="5">
+              <div onClick="{{ slot.onClick }}" style="{{ slot.style }}" style-hover="border-color:rgba(212,175,55,0.55); transform:translateY(-1px);"><span>{{ slot.label }}</span><span style="font-weight:600;">{{ slot.dot }}</span></div>
+            </sc-for>
+          </div>
+          <button onClick="{{ confirmCallA }}" style="{{ confirmAStyle }}" style-hover="filter:brightness(1.05);">{{ confirmALabel }}</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE FOOTER A -->
+    <footer style="padding:30px 40px 40px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(100,116,139,0.18); margin:0 40px;">
+      <div style="font:600 13px 'Inter',sans-serif; letter-spacing:.14em; color:#F8FAFC;">DOUBLE YOU <span style="color:#D4AF37;">//</span> COACHING</div>
+      <div style="font:300 12.5px 'Inter',sans-serif; color:#64748B;">&copy; 2026 Double You Coaching &middot; Nana Bonsra. All rights reserved.</div>
+    </footer>
+  </div>
+</div>
+
+<!-- ============ VARIATION B — CHAMPAGNE WARM ============ -->
+<div style="position:absolute; left:1320px; top:0; width:1240px;">
+  <div data-drags-parent="1" style="font:600 13px/1 'Inter',sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#9aa3b2; padding:0 4px 14px;">Variation B &mdash; Champagne Warm &middot; light glass &middot; split editorial hero</div>
+  <div data-screen-label="Variation B — Champagne Warm" style="position:relative; overflow:hidden; border-radius:20px; color:#F8FAFC; font-family:'Inter',sans-serif; background:radial-gradient(1100px 620px at 12% -10%, rgba(212,175,55,0.18), transparent 60%), radial-gradient(900px 540px at 98% 16%, rgba(160,120,70,0.16), transparent 55%), #181410; box-shadow:0 50px 130px rgba(0,0,0,.55);">
+
+    <!-- HEADER B -->
+    <div style="padding:22px 28px 0;">
+      <header style="display:flex; align-items:center; justify-content:space-between; gap:24px; padding:15px 24px; border-radius:16px; background:rgba(40,32,22,0.45); backdrop-filter:blur(15px); -webkit-backdrop-filter:blur(15px); border:1px solid rgba(212,175,55,0.2); box-shadow:0 8px 30px rgba(0,0,0,.25);">
+        <div style="font:600 15px/1 'Inter',sans-serif; letter-spacing:.14em; color:#F8FAFC;">DOUBLE YOU <span style="color:#D4AF37;">//</span> COACHING</div>
+        <nav style="display:flex; gap:34px;">
+          <a href="#" style="font:400 14px 'Inter',sans-serif; color:#a89a86; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Home</a>
+          <a href="#about-b" style="font:400 14px 'Inter',sans-serif; color:#a89a86; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">About</a>
+          <a href="#pillars-b" style="font:400 14px 'Inter',sans-serif; color:#a89a86; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Pillars</a>
+          <a href="#contact-b" style="font:400 14px 'Inter',sans-serif; color:#a89a86; text-decoration:none; letter-spacing:.02em; transition:color .25s;" style-hover="color:#D4AF37;">Contact</a>
+        </nav>
+        <div style="display:flex; align-items:center; gap:12px;">
+          <button style="padding:9px 17px; border-radius:999px; border:1px solid rgba(212,175,55,0.4); background:transparent; color:#F8FAFC; font:500 13px 'Inter',sans-serif; cursor:pointer; transition:all .25s;" style-hover="border-color:#D4AF37; color:#D4AF37;">Client Portal</button>
+          <button style="padding:10px 20px; border-radius:999px; background:#D4AF37; color:#181410; font:600 13px 'Inter',sans-serif; border:none; cursor:pointer; transition:all .25s; box-shadow:0 6px 20px rgba(212,175,55,.3);" style-hover="background:#E3C45A; transform:translateY(-1px);">Book a Call</button>
+        </div>
+      </header>
+    </div>
+
+    <!-- HERO B (split editorial) -->
+    <section style="padding:64px 48px 56px; display:grid; grid-template-columns:1.04fr 0.96fr; gap:52px; align-items:center;">
+      <div>
+        <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.30em; text-transform:uppercase; color:#D4AF37; margin-bottom:22px;">Life &amp; Leadership Coaching</div>
+        <h1 style="font-family:'EB Garamond',serif; font-weight:500; font-size:78px; line-height:1.0; letter-spacing:-0.02em; margin:0 0 26px; color:#F8FAFC;">Restoring <span style="font-style:italic; color:#D4AF37;">Beauty</span><br/>for Ashes.</h1>
+        <p style="font:300 18px/1.65 'Inter',sans-serif; color:#c4b6a3; margin:0 0 32px; max-width:520px;">A premium, co-creative coaching framework built to challenge obstacles and unlock your ultimate potential across career, relationships, and life purpose.</p>
+        <div style="display:flex; gap:16px; margin-bottom:34px;">
+          <button style="padding:15px 32px; border-radius:999px; background:#D4AF37; color:#181410; font:600 15px 'Inter',sans-serif; border:none; cursor:pointer; transition:all .25s; box-shadow:0 10px 30px rgba(212,175,55,.32);" style-hover="background:#E3C45A; transform:translateY(-2px);">Get Started</button>
+          <button onClick="{{ openVideo }}" style="padding:15px 28px; border-radius:999px; border:1px solid rgba(212,175,55,0.4); background:transparent; color:#F8FAFC; font:500 15px 'Inter',sans-serif; cursor:pointer; transition:all .25s; display:inline-flex; align-items:center; gap:11px;" style-hover="background:rgba(40,32,22,0.6); border-color:#D4AF37;"><span style="display:inline-flex; width:22px; height:22px; border-radius:999px; border:1px solid #D4AF37; align-items:center; justify-content:center; font-size:9px; color:#D4AF37;">&#9654;</span>Watch Vision Video</button>
+        </div>
+        <div style="display:flex; align-items:center; gap:16px;">
+          <div style="display:flex;">
+            <image-slot id="dyc-b-av1" style="width:40px; height:40px; display:block; border:2px solid #181410; border-radius:999px;" shape="circle" placeholder=""></image-slot>
+            <image-slot id="dyc-b-av2" style="width:40px; height:40px; display:block; border:2px solid #181410; border-radius:999px; margin-left:-12px;" shape="circle" placeholder=""></image-slot>
+            <image-slot id="dyc-b-av3" style="width:40px; height:40px; display:block; border:2px solid #181410; border-radius:999px; margin-left:-12px;" shape="circle" placeholder=""></image-slot>
+          </div>
+          <div style="font:300 13.5px/1.45 'Inter',sans-serif; color:#a89a86;">Trusted by founders, executives<br/>&amp; families seeking real change.</div>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <div style="padding:10px; border-radius:24px; background:rgba(40,32,22,0.4); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid rgba(212,175,55,0.2);">
+          <image-slot id="dyc-b-hero" style="width:100%; height:560px; display:block;" shape="rounded" radius="16" placeholder="Drop a hero portrait"></image-slot>
+        </div>
+        <div style="position:absolute; bottom:24px; left:-22px; padding:16px 20px; border-radius:16px; background:rgba(40,32,22,0.55); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(212,175,55,0.25); box-shadow:0 16px 40px rgba(0,0,0,.4); display:flex; align-items:center; gap:14px;">
+          <span style="display:inline-flex; width:10px; height:10px; border-radius:999px; background:#D4AF37; box-shadow:0 0 0 4px rgba(212,175,55,0.2);"></span>
+          <div><div style="font:600 13px 'Inter',sans-serif; color:#F8FAFC;">Now accepting clients</div><div style="font:300 12px 'Inter',sans-serif; color:#a89a86;">Discovery calls open this week</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE STRIP B (separate chips) -->
+    <section style="padding:0 48px; display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+      <div style="padding:22px 24px; border-radius:14px; background:rgba(40,32,22,0.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(212,175,55,0.16);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">High-Ticket Coaching</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#9c8f7d;">Built for founders &amp; visionaries.</div></div>
+      <div style="padding:22px 24px; border-radius:14px; background:rgba(40,32,22,0.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(212,175,55,0.16);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Co-Creative Method</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#9c8f7d;">We build the path together.</div></div>
+      <div style="padding:22px 24px; border-radius:14px; background:rgba(40,32,22,0.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(212,175,55,0.16);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Faith-Forward</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#9c8f7d;">Clarity that protects your peace.</div></div>
+      <div style="padding:22px 24px; border-radius:14px; background:rgba(40,32,22,0.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(212,175,55,0.16);"><div style="width:26px; height:2px; background:#D4AF37; margin-bottom:14px;"></div><div style="font:600 15px 'Inter',sans-serif; color:#F8FAFC; margin-bottom:6px;">Whole-Life Scope</div><div style="font:300 13px/1.5 'Inter',sans-serif; color:#9c8f7d;">Career, family, spirit &amp; wellness.</div></div>
+    </section>
+
+    <!-- ABOUT B (centered + wide image) -->
+    <section id="about-b" style="padding:90px 48px;">
+      <div style="max-width:760px; margin:0 auto; text-align:center;">
+        <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:20px;">About &middot; Nana Bonsra</div>
+        <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:52px; line-height:1.07; letter-spacing:-0.01em; margin:0 0 24px; color:#F8FAFC;">Beauty, in exchange for ashes.</h2>
+        <p style="font:300 18px/1.75 'Inter',sans-serif; color:#c4b6a3; margin:0 auto 30px; max-width:640px;">Double You Coaching was founded on a single conviction: that every season of ash carries the raw material of something more beautiful than what came before. The work is co-creative &mdash; we architect the mindset and momentum to move through your obstacles in career, relationships, and spirit.</p>
+        <div style="font-family:'EB Garamond',serif; font-style:italic; font-size:22px; color:#F8FAFC;">&mdash; Nana Bonsra, Founder</div>
+      </div>
+      <div style="margin-top:48px; padding:10px; border-radius:24px; background:rgba(40,32,22,0.34); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(212,175,55,0.16);">
+        <image-slot id="dyc-b-about" style="width:100%; height:380px; display:block;" shape="rounded" radius="16" placeholder="Drop a wide lifestyle image"></image-slot>
+      </div>
+    </section>
+
+    <!-- BENTO B (wide banner + 2x2) -->
+    <section id="pillars-b" style="padding:0 48px 90px;">
+      <div style="text-align:center; margin-bottom:36px;">
+        <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:16px;">The Five Pillars</div>
+        <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:46px; line-height:1.05; letter-spacing:-0.01em; margin:0; color:#F8FAFC;">One framework. Every dimension of your life.</h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(6,1fr); gap:18px;">
+        <!-- Card 1: Business (wide banner) -->
+        <div style="grid-column:1/7; position:relative; overflow:hidden; border-radius:18px; padding:36px; display:flex; flex-direction:row; align-items:center; gap:36px; min-height:240px; background:rgba(40,32,22,0.38); backdrop-filter:blur(13px); -webkit-backdrop-filter:blur(13px); border:1px solid rgba(212,175,55,0.18); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-5px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="flex:1;">
+            <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">01 &mdash; Business</div>
+            <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:34px; line-height:1.08; margin:0 0 12px; color:#F8FAFC;">Executive Leadership &amp; Business Strategy</h3>
+            <p style="font:300 15px/1.6 'Inter',sans-serif; color:#c4b6a3; margin:0; max-width:520px;">High-ticket positioning and mindset architecture for founders, executives, and visionaries looking to scale.</p>
+            <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:18px;">Explore Business Track &rarr;</a>
+          </div>
+          <image-slot id="dyc-b-business" style="width:320px; height:188px; display:block; flex-shrink:0;" shape="rounded" radius="14" placeholder="Drop image"></image-slot>
+        </div>
+        <!-- Card 2: Career -->
+        <div style="grid-column:1/4; min-height:248px; overflow:hidden; border-radius:18px; padding:30px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(40,32,22,0.38); backdrop-filter:blur(13px); -webkit-backdrop-filter:blur(13px); border:1px solid rgba(212,175,55,0.18); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-5px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">02 &mdash; Career</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:26px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Corporate Advancement</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#c4b6a3; margin:0;">Breakthrough frameworks to help high-performers navigate corporate dynamics and secure executive promotions.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Career Track &rarr;</a>
+        </div>
+        <!-- Card 3: Family -->
+        <div style="grid-column:4/7; min-height:248px; overflow:hidden; border-radius:18px; padding:30px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(40,32,22,0.38); backdrop-filter:blur(13px); -webkit-backdrop-filter:blur(13px); border:1px solid rgba(212,175,55,0.18); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-5px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">03 &mdash; Family</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:26px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Family &amp; Relationship Guidance</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#c4b6a3; margin:0;">Co-creative alignment frameworks to bring harmony, communication, and emotional strength back to couples and families.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Family Track &rarr;</a>
+        </div>
+        <!-- Card 4: Spiritual -->
+        <div style="grid-column:1/4; min-height:228px; overflow:hidden; border-radius:18px; padding:30px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(40,32,22,0.38); backdrop-filter:blur(13px); -webkit-backdrop-filter:blur(13px); border:1px solid rgba(212,175,55,0.18); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-5px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">04 &mdash; Spirituality</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:25px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Spiritual Grounding</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#c4b6a3; margin:0;">Faith-forward foundations providing deep inner alignment and core clarity to protect your peace.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Alignment &rarr;</a>
+        </div>
+        <!-- Card 5: Wellness -->
+        <div style="grid-column:4/7; min-height:228px; overflow:hidden; border-radius:18px; padding:30px; display:flex; flex-direction:column; justify-content:flex-end; background:rgba(40,32,22,0.38); backdrop-filter:blur(13px); -webkit-backdrop-filter:blur(13px); border:1px solid rgba(212,175,55,0.18); transition:transform .4s cubic-bezier(.2,.8,.2,1), border-color .4s, box-shadow .4s; cursor:pointer;" style-hover="transform:translateY(-5px); border-color:rgba(212,175,55,0.5); box-shadow:0 26px 64px rgba(0,0,0,.45);">
+          <div style="font-family:'EB Garamond',serif; font-size:15px; color:#D4AF37; letter-spacing:.06em; margin-bottom:10px;">05 &mdash; Wellness</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:25px; line-height:1.1; margin:0 0 10px; color:#F8FAFC;">Holistic Wellness</h3>
+          <p style="font:300 14px/1.55 'Inter',sans-serif; color:#c4b6a3; margin:0;">Optimizing emotional, mental, and physical fitness to support sustainable, high-performance daily living.</p>
+          <a href="#" style="color:#D4AF37; font:600 12px 'Inter',sans-serif; letter-spacing:.08em; text-transform:uppercase; text-decoration:none; display:inline-flex; gap:8px; margin-top:14px;">Explore Wellness &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CONVERSION B -->
+    <section id="contact-b" style="padding:0 48px 70px;">
+      <div style="display:grid; grid-template-columns:1.05fr 0.95fr; border-radius:24px; overflow:hidden; background:rgba(40,32,22,0.42); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:1px solid rgba(212,175,55,0.2); box-shadow:0 30px 90px rgba(0,0,0,.4);">
+        <div style="padding:48px;">
+          <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:18px;">Get in touch today</div>
+          <h2 style="font-family:'EB Garamond',serif; font-weight:500; font-size:40px; line-height:1.08; margin:0 0 28px; color:#F8FAFC;">Let&rsquo;s begin the conversation.</h2>
+          <div style="display:flex; flex-direction:column; gap:18px;">
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#a89a86; margin-bottom:8px;">Name</label><input type="text" placeholder="Your full name" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(40,32,22,0.5); border:1px solid rgba(212,175,55,0.22); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;" /></div>
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#a89a86; margin-bottom:8px;">Email</label><input type="email" placeholder="you@example.com" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(40,32,22,0.5); border:1px solid rgba(212,175,55,0.22); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;" /></div>
+            <div><label style="display:block; font:500 11px 'Inter',sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#a89a86; margin-bottom:8px;">Message</label><textarea rows="3" placeholder="Tell me where you&rsquo;re headed&hellip;" style="width:100%; padding:13px 16px; border-radius:10px; background:rgba(40,32,22,0.5); border:1px solid rgba(212,175,55,0.22); color:#F8FAFC; font:400 15px 'Inter',sans-serif; outline:none; resize:none; transition:border-color .2s;" style-focus="border-color:#D4AF37;"></textarea></div>
+            <button onClick="{{ submitFormB }}" style="{{ formBStyle }}" style-hover="filter:brightness(1.05);">{{ formBLabel }}</button>
+          </div>
+        </div>
+        <div style="padding:44px; background:rgba(212,175,55,0.06); border-left:1px solid rgba(212,175,55,0.18);">
+          <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.28em; text-transform:uppercase; color:#D4AF37; margin-bottom:18px;">Book a discovery call</div>
+          <h3 style="font-family:'EB Garamond',serif; font-weight:500; font-size:27px; line-height:1.1; margin:0 0 6px; color:#F8FAFC;">Open this week</h3>
+          <p style="font:300 13.5px 'Inter',sans-serif; color:#9c8f7d; margin:0 0 22px;">{{ selBText }}</p>
+          <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
+            <sc-for list="{{ slotsB }}" as="slot" hint-placeholder-count="6">
+              <div onClick="{{ slot.onClick }}" style="{{ slot.style }}" style-hover="border-color:rgba(212,175,55,0.55); transform:translateY(-1px);"><span>{{ slot.label }}</span><span style="font-weight:600;">{{ slot.dot }}</span></div>
+            </sc-for>
+          </div>
+          <button onClick="{{ confirmCallB }}" style="{{ confirmBStyle }}" style-hover="filter:brightness(1.05);">{{ confirmBLabel }}</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE FOOTER B -->
+    <footer style="padding:30px 48px 40px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(212,175,55,0.16); margin:0 48px;">
+      <div style="font:600 13px 'Inter',sans-serif; letter-spacing:.14em; color:#F8FAFC;">DOUBLE YOU <span style="color:#D4AF37;">//</span> COACHING</div>
+      <div style="font:300 12.5px 'Inter',sans-serif; color:#9c8f7d;">&copy; 2026 Double You Coaching &middot; Nana Bonsra. All rights reserved.</div>
+    </footer>
+  </div>
+</div>
+
+<!-- ============ SHARED VIDEO MODAL ============ -->
+<sc-if value="{{ videoOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeVideo }}" style="position:fixed; inset:0; z-index:200; display:flex; align-items:center; justify-content:center; padding:60px; background:rgba(10,12,18,0.7); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);">
+    <div style="position:relative; width:min(900px,90%); border-radius:20px; overflow:hidden; background:rgba(25,33,50,0.6); backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px); border:1px solid rgba(212,175,55,0.3); box-shadow:0 40px 120px rgba(0,0,0,.6);">
+      <div style="padding:20px 24px; display:flex; align-items:center; justify-content:space-between;">
+        <div style="font:600 12px 'Inter',sans-serif; letter-spacing:.24em; text-transform:uppercase; color:#D4AF37;">The Vision &middot; Double You Coaching</div>
+        <button onClick="{{ closeVideo }}" style="width:34px; height:34px; border-radius:999px; border:1px solid rgba(100,116,139,0.4); background:transparent; color:#F8FAFC; font-size:16px; cursor:pointer; transition:all .2s;" style-hover="border-color:#D4AF37; color:#D4AF37;">&times;</button>
+      </div>
+      <div style="position:relative; padding:0 24px 24px;">
+        <image-slot id="dyc-video" style="width:100%; height:440px; display:block;" shape="rounded" radius="14" placeholder="Drop the vision video poster / clip"></image-slot>
+        <div style="position:absolute; inset:0 24px 24px; display:flex; align-items:center; justify-content:center; pointer-events:none;">
+          <span style="display:inline-flex; width:74px; height:74px; border-radius:999px; background:rgba(212,175,55,0.92); align-items:center; justify-content:center; color:#181410; font-size:24px; box-shadow:0 12px 40px rgba(212,175,55,.45);">&#9654;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { showVideo: false, slotA: null, slotB: null, callA: false, callB: false, formA: false, formB: false };
+
+  buildSlots(times, key, selected, warm) {
+    const base = "padding:12px 15px; border-radius:11px; font:500 13.5px/1.2 'Inter',sans-serif; cursor:pointer; transition:all .22s ease; display:flex; align-items:center; justify-content:space-between; gap:10px;";
+    const unsel = warm
+      ? "background:rgba(40,32,22,0.45); border:1px solid rgba(212,175,55,0.18); color:#F8FAFC;"
+      : "background:rgba(25,33,50,0.5); border:1px solid rgba(100,116,139,0.28); color:#F8FAFC;";
+    const sel = "background:#D4AF37; border:1px solid #D4AF37; color:#181410; font-weight:600;";
+    return times.map((t) => {
+      const isSel = selected === t;
+      return {
+        label: t,
+        dot: isSel ? "\u2713" : "\u2192",
+        style: base + (isSel ? sel : unsel),
+        onClick: () => this.setState((s) => ({ [key]: isSel ? null : t, [key === "slotA" ? "callA" : "callB"]: false })),
+      };
+    });
+  }
+
+  confirmStyle(active) {
+    const b = "width:100%; margin-top:18px; padding:14px; border-radius:12px; border:none; font:600 14.5px 'Inter',sans-serif; transition:all .2s;";
+    return active
+      ? b + "background:#D4AF37; color:#181410; cursor:pointer;"
+      : b + "background:rgba(100,116,139,0.22); color:rgba(248,250,252,0.5); cursor:not-allowed;";
+  }
+
+  formStyle() {
+    return "margin-top:6px; padding:15px; border-radius:12px; border:none; background:#D4AF37; color:#181410; font:600 14.5px 'Inter',sans-serif; cursor:pointer; transition:all .2s;";
+  }
+
+  renderVals() {
+    const timesA = [
+      "Tuesday, Jun 24  \u00b7  10:00 AM",
+      "Wednesday, Jun 25  \u00b7  2:30 PM",
+      "Thursday, Jun 26  \u00b7  9:00 AM",
+      "Thursday, Jun 26  \u00b7  4:00 PM",
+      "Friday, Jun 27  \u00b7  1:00 PM",
+    ];
+    const timesB = [
+      "Mon Jun 23 \u00b7 11:00",
+      "Tue Jun 24 \u00b7 3:00",
+      "Wed Jun 25 \u00b7 9:30",
+      "Thu Jun 26 \u00b7 1:30",
+      "Fri Jun 27 \u00b7 4:30",
+      "Fri Jun 27 \u00b7 6:00",
+    ];
+
+    return {
+      // video modal
+      videoOpen: this.state.showVideo,
+      openVideo: () => this.setState({ showVideo: true }),
+      closeVideo: () => this.setState({ showVideo: false }),
+
+      // scheduling A
+      slotsA: this.buildSlots(timesA, "slotA", this.state.slotA, false),
+      selAText: this.state.slotA ? "Selected \u2014 " + this.state.slotA : "Choose a time that suits you.",
+      confirmAStyle: this.confirmStyle(!!this.state.slotA && !this.state.callA),
+      confirmALabel: this.state.callA ? "\u2713 Discovery call requested" : (this.state.slotA ? "Confirm this time" : "Select a time first"),
+      confirmCallA: () => { if (this.state.slotA) this.setState({ callA: true }); },
+
+      // scheduling B
+      slotsB: this.buildSlots(timesB, "slotB", this.state.slotB, true),
+      selBText: this.state.slotB ? "Selected \u2014 " + this.state.slotB : "Choose a time that suits you.",
+      confirmBStyle: this.confirmStyle(!!this.state.slotB && !this.state.callB),
+      confirmBLabel: this.state.callB ? "\u2713 Discovery call requested" : (this.state.slotB ? "Confirm this time" : "Select a time first"),
+      confirmCallB: () => { if (this.state.slotB) this.setState({ callB: true }); },
+
+      // contact forms
+      formAStyle: this.formStyle(),
+      formALabel: this.state.formA ? "\u2713 Message sent \u2014 thank you" : "Send Message",
+      submitFormA: () => this.setState({ formA: true }),
+      formBStyle: this.formStyle(),
+      formBLabel: this.state.formB ? "\u2713 Message sent \u2014 thank you" : "Send Message",
+      submitFormB: () => this.setState({ formB: true }),
+    };
+  }
+}
+</script>
+</body>
+</html>
