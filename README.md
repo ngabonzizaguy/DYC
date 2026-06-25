@@ -6,26 +6,23 @@ Client-facing design prototype for **Double You Coaching** (Nana Bonsra).
 
 **https://dyc-sable.vercel.app**
 
-Share this URL with the client to review the final Main-design prototype.
+Built from `UI - html-design-files/Double You Coaching Site Main-design.dc.html` (mobile-responsive final design) with GSAP scroll animations and a Three.js ambient particle background.
+
+## Rebuild
+
+After editing the Main-design source file:
+
+```bash
+node scripts/build-index.js
+```
 
 ## Project structure
 
 | Path | Description |
 |------|-------------|
-| `index.html` | **Final client prototype** — self-contained bundled version of the Main-design (all assets embedded, ready to share) |
-| `image-assets/Double You Coaching Site Main-design.dc.html` | Source design file (Main-design final version) |
-| `image-assets/dyc-design.html` | Bundled export of the Main-design |
-| `UI - html-design-files/Double You Coaching.dc.html` | Earlier design variations (A & B) |
-| `image-assets/` | Brand images and assets |
-
-## Local preview
-
-Open `index.html` in a browser, or serve the folder locally:
-
-```bash
-npx serve .
-```
-
-## Deploy
-
-Static site — no build step. Push to GitHub; Vercel deploys automatically when the repo is linked.
+| `index.html` | Production site (built from Main-design) |
+| `js/support.js` | Claude Design Canvas runtime |
+| `js/image-slot.js` | Image slot web component |
+| `js/site-enhancements.js` | GSAP + Three.js enhancements |
+| `UI - html-design-files/Double You Coaching Site Main-design.dc.html` | **Source of truth** — final design with mobile breakpoints |
+| `image-assets/` | Brand images |
