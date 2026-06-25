@@ -4,7 +4,9 @@ Client-facing design prototype for **Double You Coaching** (Nana Bonsra).
 
 ## Live preview
 
-The site is deployed on Vercel. Open the production URL from the [Vercel dashboard](https://vercel.com) or the deployment link in this repo’s GitHub description once connected.
+**https://dyc-sable.vercel.app**
+
+Share this URL with the client to review the final Main-design prototype.
 
 ## Project structure
 
