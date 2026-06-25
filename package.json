@@ -1,0 +1,10 @@
+{
+  "name": "dyc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Double You Coaching design prototype",
+  "scripts": {
+    "build": "node scripts/build-index.js && node scripts/validate-build.js",
+    "validate": "node scripts/validate-build.js"
+  }
+}
