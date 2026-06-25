@@ -152,7 +152,11 @@
       return;
     }
 
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    if (typeof ScrollToPlugin !== "undefined") {
+      gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    } else {
+      gsap.registerPlugin(ScrollTrigger);
+    }
 
     if (!prefersReducedMotion) {
       gsap.to("header", {
@@ -264,11 +268,15 @@
         const target = root.querySelector(id);
         if (!target) return;
         e.preventDefault();
-        gsap.to(window, {
-          duration: prefersReducedMotion ? 0 : 1.1,
-          scrollTo: { y: target, offsetY: 80 },
-          ease: "power3.inOut",
-        });
+        if (typeof ScrollToPlugin !== "undefined") {
+          gsap.to(window, {
+            duration: prefersReducedMotion ? 0 : 1.1,
+            scrollTo: { y: target, offsetY: 80 },
+            ease: "power3.inOut",
+          });
+        } else {
+          target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+        }
       });
     });
 
