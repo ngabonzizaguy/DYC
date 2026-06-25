@@ -14,7 +14,7 @@ if (!match) {
 }
 
 const manifest = JSON.parse(match[1]);
-const outDir = "C:/Users/G/Desktop/2025/Projects/DYC/public/js";
+const outDir = path.join(__dirname, "../scripts/extracted");
 fs.mkdirSync(outDir, { recursive: true });
 
 for (const [uuid, entry] of Object.entries(manifest)) {
